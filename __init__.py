@@ -9,9 +9,9 @@ from chatterbot import ChatBot
 from chatterbot.conversation import Statement
 from chatterbot.trainers import ChatterBotCorpusTrainer
 
-#ai chan
-TOKEN = 'token here' #put discord bot token here 
-channel_name = 'ai-chan' #dedicated channel name 
+#Yuki Chan
+TOKEN = '' #put discord bot token here
+channel_name = 'yuki-chan' #dedicated channel name
 
 
 def ignore_errors(func):
@@ -125,7 +125,7 @@ class LastMessages:
         self.messages = []
 
 
-class ai_chan(discord.Client):
+class yuki_chan(discord.Client):
 
 
     def _respond(self, message):
@@ -176,6 +176,6 @@ class ai_chan(discord.Client):
 
 
 if __name__ == '__main__':
-    print('Starting AI Chan...')
-    CLIENT = ai_chan()
-    CLIENT.run(TOKEN)#, bot=False)
+    print('Starting Yuki Chan...')
+    CLIENT = yuki_chan()
+    CLIENT.run()#, bot=False)
